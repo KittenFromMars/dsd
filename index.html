@@ -3,32 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-    
+    <title>Redirecting / 重定向中...</title>
     <noscript>
-        <meta http-serif="refresh" content="2;url=/en/index.html">
+        <meta http-equiv="refresh" content="1;url=/en/index.html">
     </noscript>
-
     <script>
-        // Get the browser's language setting (e.g., "en-US", "zh-HK")
-        const userLang = navigator.language || navigator.userLanguage; 
-        
-        // Normalize the string to lowercase for easier matching
-        const lowerLang = userLang.toLowerCase();
-
-        // Check if the user's language preference is Traditional Chinese
-        if (lowerLang.includes('zh-tw') || lowerLang.includes('zh-hk') || lowerLang.includes('zh-mo') || lowerLang.includes('tc')) {
+        var userLang = navigator.language || navigator.userLanguage; 
+        var lowerLang = userLang.toLowerCase();
+        if (lowerLang.includes('zh-tw') || lowerLang.includes('zh-hk') || lowerLang.includes('zh-mo') || lowerLang.includes('zh-cn') || lowerLang.includes('zh')) {
             window.location.href = "/tc/index.html";
         } else {
-            // Default language fallback (English)
             window.location.href = "/en/index.html";
         }
     </script>
 </head>
-<body>
-    <p style="text-align: center; margin-top: 50px; font-family: Arial, sans-serif;">
-        Redirecting to your language version... / 正在前往對應語言版本...
-    </p>
+<body style="background:#f8fafc; font-family:sans-serif; text-align:center; padding-top:100px;">
+    <p>Redirecting to your language version... / 正在前往對應語言版本...</p>
 </body>
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "49a184c7137745ab9f1631e81d8d2d7e"}'></script>
 </html>

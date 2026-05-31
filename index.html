@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    
+    <noscript>
+        <meta http-serif="refresh" content="2;url=/en/index.html">
+    </noscript>
+
+    <script>
+        // Get the browser's language setting (e.g., "en-US", "zh-HK")
+        const userLang = navigator.language || navigator.userLanguage; 
+        
+        // Normalize the string to lowercase for easier matching
+        const lowerLang = userLang.toLowerCase();
+
+        // Check if the user's language preference is Traditional Chinese
+        if (lowerLang.includes('zh-tw') || lowerLang.includes('zh-hk') || lowerLang.includes('zh-mo') || lowerLang.includes('tc')) {
+            window.location.href = "/tc/index.html";
+        } else {
+            // Default language fallback (English)
+            window.location.href = "/en/index.html";
+        }
+    </script>
+</head>
+<body>
+    <p style="text-align: center; margin-top: 50px; font-family: Arial, sans-serif;">
+        Redirecting to your language version... / 正在前往對應語言版本...
+    </p>
+</body>
+</html>

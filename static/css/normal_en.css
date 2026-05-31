@@ -1,191 +1,43 @@
-:root {
-    --primary-color: #1a365d;
-    --secondary-color: #2b6cb0;
-    --text-color: #2d3748;
-    --bg-color: #f7fafc;
-    --card-bg: #ffffff;
-    --border-color: #e2e8f0;
-}
-
-body {
-    font-family: "Microsoft JhengHei", "MingLiU", "Georgia", serif;
-    line-height: 1.8;
-    color: var(--text-color);
-    background-color: var(--bg-color);
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 20px 40px;
-    text-align: center;
-    border-bottom: 4px solid var(--secondary-color);
-}
-
-header h1 {
-    margin: 0;
-    font-size: 1.6rem;
-    font-weight: normal;
-    letter-spacing: 2px;
-}
-
 .container {
-    max-width: 1200px;
-    margin: 30px auto;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 30px;
-    padding: 0 20px;
-}
-
-@media (max-width: 900px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
-    .sidebar {
-        order: -1;
-    }
-}
-
-.main-content {
-    background: var(--card-bg);
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    border: 1px solid var(--border-color);
-}
-
-.sidebar {
-    background: var(--card-bg);
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    border: 1px solid var(--border-color);
-    height: fit-content;
-    font-size: 0.9rem;
-}
-
-.case-header-block {
-    text-align: center;
-    margin-bottom: 40px;
-    border-bottom: 2px double var(--border-color);
-    padding-bottom: 20px;
-}
-
-.court-title {
-    font-weight: bold;
-    font-size: 1.3rem;
-    margin-bottom: 5px;
-    letter-spacing: 1px;
-}
-
-.case-number {
-    font-weight: bold;
-    color: var(--secondary-color);
-    font-size: 1.1rem;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.parties-table {
-    width: 100%;
-    margin: 20px 0;
-    border-collapse: collapse;
-}
-
-.parties-table td {
-    padding: 8px;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.party-name {
-    font-weight: bold;
-    font-size: 1.15rem;
-}
-
-.vs {
-    font-style: italic;
-    color: #718096;
-    font-weight: bold;
-}
-
-.judgment-title {
-    text-align: center;
-    font-size: 1.6rem;
-    letter-spacing: 8px;
-    margin: 40px 0;
-    font-weight: bold;
-    border-bottom: 1px solid var(--text-color);
-    display: inline-block;
-    width: 100%;
-    padding-bottom: 5px;
-}
-
-.paragraph {
     display: flex;
-    margin-bottom: 25px;
-    text-align: justify;
-}
-
-.para-num {
-    min-width: 35px;
-    font-weight: bold;
-    color: var(--secondary-color);
-    user-select: none;
-}
-
-.quote-block {
-    margin: 15px 0 15px 35px;
-    padding-left: 15px;
-    border-left: 3px solid var(--secondary-color);
-    background-color: #f7fafc;
-    padding: 10px 15px;
-}
-
-.signature {
-    margin-top: 50px;
-    text-align: right;
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-.sidebar-title {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: var(--primary-color);
-    border-bottom: 2px solid var(--border-color);
-    padding-bottom: 8px;
-    margin-top: 0;
-    margin-bottom: 15px;
-}
-
-.meta-group {
-    margin-bottom: 15px;
-}
-
-.meta-label {
-    font-weight: bold;
-    color: #718096;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-}
-
-.meta-value {
-    color: var(--text-color);
-    margin-top: 2px;
-}
-
-footer {
-    text-align: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    color: #a0aec0;
-    font-size: 0.85rem;
 }
-
-footer a {
-    color: var(--secondary-color);
+.main-content {
+    flex: 2;
+    min-width: 0;
+}
+.sidebar {
+    flex: 1;
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    height: fit-content;
+}
+.lang-switcher {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #f1f5f9;
+    border-bottom: 1px solid #e2e8f0;
+}
+.lang-btn {
+    padding: 6px 12px;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
     text-decoration: none;
+    color: #1e293b;
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+.lang-btn:hover {
+    background-color: #3b82f6;
+    color: #ffffff;
+    border-color: #3b82f6;
 }

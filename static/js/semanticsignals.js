@@ -1,4 +1,3 @@
-<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LegalDocument",
@@ -10,4 +9,3 @@
     "name": "Hong Kong Judiciary Legal Reference System"
   }
 }
-</script>

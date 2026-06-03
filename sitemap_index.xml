@@ -8,4 +8,16 @@
     <loc>https://dsd.dpdns.org/sitemap-tc.xml</loc>
     <lastmod>2026-06-01</lastmod>
   </sitemap>
+  <url>
+    <loc>https://dsd.dpdns.org/i/index.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://dsd.dpdns.org/r/index.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
 </sitemapindex>

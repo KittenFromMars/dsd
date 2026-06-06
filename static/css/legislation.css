@@ -53,8 +53,8 @@
     line-height: 1.8;
     color: #222222;
     margin-bottom: 20px;
-    padding-left: 60px;   /* Creates room for label + hanging offset */
-    text-indent: -30px;  /* Moves first line left symmetrically */
+    padding-left: 100px;   /* Creates room for label + hanging offset */
+    text-indent: -40px;  /* Moves first line left symmetrically */
 }
 
 /* Standardized spacing block without indents */
